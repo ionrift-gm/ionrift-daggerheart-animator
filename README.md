@@ -2,9 +2,7 @@
 
 **The missing bridge between Daggerheart and Automated Animations.**
 
-![Preview](preview/screenshot.png)
-
-> [**Watch the Demo Video**](preview/demo.mp4)
+[![Preview - Click to Watch](preview/screenshot.png)](preview/demo.mp4)
 
 Daggerheart Animator is a specialized middleware that allows generic Daggerheart attacks (like "Claws", "Bite", or "Melee")—which are often just data objects on an actor—to trigger robust animations via the [Automated Animations](https://foundryvtt.com/packages/autoanimations) module.
 
