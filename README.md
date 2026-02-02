@@ -1,13 +1,13 @@
 # Ionrift Daggerheart Animator
 
-**The missing bridge between Daggerheart and Automated Animations.**
+**Connects Daggerheart to Automated Animations.**
 
 ![Demo Animation](preview/demo.gif)
 
-Daggerheart Animator is a specialized middleware that allows generic Daggerheart attacks (like "Claws", "Bite", or "Melee")—which are often just data objects on an actor—to trigger robust animations via the [Automated Animations](https://foundryvtt.com/packages/autoanimations) module.
+This module is a bridge. It lets Daggerheart attacks (like "Claws", "Bite", or "Melee") trigger animations in [Automated Animations](https://foundryvtt.com/packages/autoanimations), something that doesn't happen by default because Daggerheart attacks aren't standard "Items".
 
-## Why is this needed?
-In Daggerheart, many adversary attacks are not valid "Items" in the Foundry sense, preventing Automated Animations from treating them as standard weapon attacks. This module "fakes" a valid item during the roll so that animation hooks fire correctly.
+## What it does
+It looks at your roll data and "tricks" the animation system into seeing a valid weapon, so your hooks fire correctly. Simple as that.
 
 ## Installation
 1.  Install **Automated Animations** and **Daggerheart**.
