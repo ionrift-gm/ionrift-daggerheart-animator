@@ -1,0 +1,37 @@
+name: Release Creation
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Optimize Images (Optional)
+        # You could add steps here to minify JS or optimize images if needed later.
+        run: echo "Building release..."
+
+      - name: Zip Module
+        # Zips current directory, excluding git/github/dev files
+        run: |
+          zip -r module.zip . -x ".git/*" ".github/*" ".gitignore" "RELEASE_WORKFLOW.md" "task.md"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            module.zip
+            module.json
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          generate_release_notes: true
