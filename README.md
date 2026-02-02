@@ -1,4 +1,4 @@
-# Ionrift Animations
+# Ionrift Daggerheart Animator
 
 **The missing bridge between Daggerheart and Automated Animations.**
 
