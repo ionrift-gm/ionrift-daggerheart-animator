@@ -7,7 +7,10 @@
  */
 export async function handleAnimation(itemName, actor, message) {
     // 1. Check if Automated Animations is active
-    if (!game.modules.get("autoanimations")?.active) return;
+    if (!game.modules.get("autoanimations")?.active) {
+        console.warn("Ionrift Animations | ❌ Automated Animations module is NOT active. Skipping.");
+        return;
+    }
 
     // 2. Resolve the Source Token
     // Try to get token from speaker, or actor's active tokens
@@ -17,7 +20,7 @@ export async function handleAnimation(itemName, actor, message) {
     }
 
     if (!sourceToken) {
-        console.warn("Ionrift Animations | No source token found for animation.");
+        console.warn("Ionrift Animations | ❌ No source token found for animation. Make sure a token is selected or the actor has an active token.");
         return;
     }
 
@@ -92,10 +95,6 @@ export async function handleAnimation(itemName, actor, message) {
         // Just play it naturally
         console.log(`Ionrift Animations | Triggering Animation for '${itemName}' (REAL Item)`, item);
         if (typeof AutomatedAnimations !== "undefined" && AutomatedAnimations.playAnimation) {
-            AutomatedAnimations.playAnimation(sourceToken, item, { targets targets }); // ERROR: targets was wrong arg previously? 
-            // Wait, previous file had: AutomatedAnimations.playAnimation(sourceToken, targets, item); which was WRONG.
-            // My fixed version had: AutomatedAnimations.playAnimation(sourceToken, syntheticItem, { targets: targets });
-
             // Standard AA call is playAnimation(token, item, options)
             AutomatedAnimations.playAnimation(sourceToken, item, { targets: targets });
         }
