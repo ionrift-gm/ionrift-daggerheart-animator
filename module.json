@@ -2,6 +2,7 @@
     "id": "ionrift-daggerheart-animator",
     "title": "Ionrift: Daggerheart Animator",
     "description": "Connects Daggerheart attacks to Automated Animations.",
+    "readme": "https://raw.githubusercontent.com/ionrift-gm/ionrift-daggerheart-animator/main/README.md",
     "version": "1.0.2",
     "url": "https://github.com/ionrift-gm/ionrift-daggerheart-animator",
     "manifest": "https://github.com/ionrift-gm/ionrift-daggerheart-animator/releases/latest/download/module.json",
