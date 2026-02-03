@@ -2,12 +2,14 @@
 
 **Connects Daggerheart to Automated Animations.**
 
-![Demo Animation](preview/demo.gif)
+![Demo](preview/demo.gif)
 
-This module is a bridge. It lets Daggerheart attacks (like "Claws", "Bite", or "Melee") trigger animations in [Automated Animations](https://foundryvtt.com/packages/autoanimations), something that doesn't happen by default because Daggerheart attacks aren't standard "Items".
+This module links generic Daggerheart attacks (Claws, Bite, Melee) to **Automated Animations**.
+
+Most monster attacks aren't real "Items" in Foundry, so animations don't trigger. This module fixes that by constructing a temporary item during the roll.
 
 ## What it does
-It looks at your roll data and "tricks" the animation system into seeing a valid weapon, so your hooks fire correctly. Simple as that.
+It bridges the gap by presenting a valid weapon during the roll, enabling hooks to fire. No configuration needed.
 
 ## Installation
 1.  Install **Automated Animations** and **Daggerheart**.
