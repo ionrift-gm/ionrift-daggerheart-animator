@@ -4,6 +4,10 @@
 
 
 
+
+## [1.0.7]
+*   Maintenance: Added manual workflow trigger for release debugging.
+
 ## [1.0.6]
 *   Fix: Resolved GitHub Actions secret injection issue.
 
