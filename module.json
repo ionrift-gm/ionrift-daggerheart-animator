@@ -9,7 +9,7 @@
     "download": "https://github.com/ionrift-gm/ionrift-daggerheart-animator/releases/download/v1.0.4/module.zip",
     "compatibility": {
         "minimum": "10",
-        "verified": "12"
+        "verified": "13"
     },
     "esmodules": [
         "scripts/main.js"
