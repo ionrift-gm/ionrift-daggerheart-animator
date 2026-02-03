@@ -5,6 +5,10 @@
 
 
 
+
+## [1.0.8]
+*   Update: Adjusted minimum compatibility to v12 (previously v10) to align with verification testing.
+
 ## [1.0.7]
 *   Maintenance: Added manual workflow trigger for release debugging.
 
