@@ -3,6 +3,10 @@
 
 
 
+
+## [1.0.6]
+*   Fix: Resolved GitHub Actions secret injection issue.
+
 ## [1.0.5]
 *   Update: Verified compatibility with Foundry VTT v13.
 

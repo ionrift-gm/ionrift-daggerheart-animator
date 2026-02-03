@@ -39,6 +39,8 @@ jobs:
       - name: Notify Foundry VTT
         if: success()
         uses: actions/github-script@v7
+        env:
+          FOUNDRY_TOKEN: ${{ secrets.FOUNDRY_RELEASE_TOKEN }}
         with:
           script: |
             const fs = require('fs');
@@ -62,7 +64,7 @@ jobs:
               method: "POST",
               headers: {
                 'Content-Type': 'application/json',
-                'Authorization': '${{ secrets.FOUNDRY_RELEASE_TOKEN }}'
+                'Authorization': process.env.FOUNDRY_TOKEN
               },
               body: JSON.stringify(payload)
             });
