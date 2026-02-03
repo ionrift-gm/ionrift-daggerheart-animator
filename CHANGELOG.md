@@ -2,6 +2,10 @@
 
 
 
+
+## [1.0.5]
+*   Update: Verified compatibility with Foundry VTT v13.
+
 ## [1.0.4]
 *   Fix: Enabled automated release notifications to Foundry registry.
 
