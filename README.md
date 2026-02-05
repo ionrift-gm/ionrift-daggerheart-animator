@@ -37,3 +37,6 @@ More Daggerheart tools are in the works!
 
 ## License
 MIT
+
+---
+*Part of the [Ionrift Module Suite](https://github.com/ionrift-gm).*
