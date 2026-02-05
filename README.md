@@ -1,5 +1,8 @@
 # Ionrift Daggerheart Animator
 
+![Downloads](https://img.shields.io/github/downloads/ionrift-gm/ionrift-daggerheart-animator/total?color=violet&label=Downloads)
+![Latest Release](https://img.shields.io/github/v/release/ionrift-gm/ionrift-daggerheart-animator?color=violet&label=Latest%20Version)
+
 **Connects Daggerheart to Automated Animations.**
 
 ![Demo](preview/demo.gif)
