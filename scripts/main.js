@@ -1,6 +1,21 @@
 import { handleAnimation } from "./animationBridge.js";
 import { AnimatorDiagnostics } from "./Diagnostics.js";
 
+// Register settings during init (before ready)
+Hooks.once('init', () => {
+    // Support Link
+    game.settings.registerMenu("ionrift-daggerheart-animator", "supportLink", {
+        name: "Get Support",
+        label: "Join Discord",
+        hint: "Bug reports, questions, and feature requests.",
+        icon: "fab fa-discord",
+        type: class extends FormApplication {
+            render() { window.open("https://discord.gg/YmgdNNu4", "_blank"); return this; }
+        },
+        restricted: false
+    });
+});
+
 Hooks.once('ready', async function () {
     console.log("Ionrift Animations | Module Ready");
 
