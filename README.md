@@ -29,14 +29,11 @@ It bridges the gap by presenting a valid weapon during the roll, enabling hooks 
 4.  Roll an attack from a Daggerheart PC or NPC sheet.
 5.  Receive animations!
 
-## Support
-If you find this module useful, consider supporting the project:
-[**Patreon / Buy me a Coffee**](https://patreon.com/ionrift)
-
-More Daggerheart tools are in the works!
-
 ## License
 MIT
 
 ---
-*Part of the [Ionrift Module Suite](https://github.com/ionrift-gm).*
+
+**Part of the [Ionrift Module Suite](https://github.com/ionrift-gm)**
+
+[Wiki / Guides](https://github.com/ionrift-gm/ionrift-library/wiki) · [Discord](https://discord.gg/YmgdNNu4) · [Patreon](https://patreon.com/ionrift)
