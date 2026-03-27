@@ -36,4 +36,4 @@ MIT
 
 **Part of the [Ionrift Module Suite](https://github.com/ionrift-gm)**
 
-[Wiki / Guides](https://github.com/ionrift-gm/ionrift-library/wiki) · [Discord](https://discord.gg/8p9Fp6wa) · [Patreon](https://patreon.com/ionrift)
+[Wiki / Guides](https://github.com/ionrift-gm/ionrift-library/wiki) · [Discord](https://discord.gg/vFGXf7Fncj) · [Patreon](https://patreon.com/ionrift)
