@@ -10,7 +10,7 @@ Hooks.once('init', () => {
         hint: "Bug reports, questions, and feature requests.",
         icon: "fab fa-discord",
         type: class extends FormApplication {
-            render() { window.open("https://discord.gg/8p9Fp6wa", "_blank"); return this; }
+            render() { window.open("https://discord.gg/vFGXf7Fncj", "_blank"); return this; }
         },
         restricted: false
     });

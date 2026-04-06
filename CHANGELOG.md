@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.0.15] - Fix Expired Discord Link
+*   **Fix**: Updated the support Discord link in module settings and the `bugs` field. The previous invite had expired.
+
 ## [1.0.12] - Discord Support Link
 *   **Feature**: Added "Get Support" button to module settings. Opens the Ionrift Discord server.
 *   **Improvement**: Added `bugs` field to `module.json` pointing to Discord.
