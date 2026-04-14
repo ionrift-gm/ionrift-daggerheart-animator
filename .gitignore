@@ -3,3 +3,9 @@ node_modules/
 .DS_Store/
 thumb.db/
 *.log/
+
+# Agent handoff specs (ephemeral — see DEV_PROTOCOLS.md §30)
+.cursor/
+CURSOR_TASK_*
+CURSOR_SPEC_*
+CURSOR_PLAN_*
