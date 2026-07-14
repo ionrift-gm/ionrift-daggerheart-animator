@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.0.17] - 2026-07-14
+*   Package listing uses Foundry's default module icon.
+
 ## [1.0.15] - Fix Expired Discord Link
 *   **Fix**: Updated the support Discord link in module settings and the `bugs` field. The previous invite had expired.
 
