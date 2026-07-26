@@ -7,7 +7,7 @@ Hooks.once('init', () => {
     game.settings.registerMenu("ionrift-daggerheart-animator", "supportLink", {
         name: "Get Support",
         label: "Join Discord",
-        hint: "Bug reports, questions, and feature requests.",
+        hint: "",
         icon: "fab fa-discord",
         type: class extends FormApplication {
             render() { window.open("https://discord.gg/vFGXf7Fncj", "_blank"); return this; }
