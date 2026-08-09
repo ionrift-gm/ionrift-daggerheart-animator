@@ -21,7 +21,7 @@ This module links generic Daggerheart attacks (Claws, Bite, Melee) to **Automate
 Most monster attacks aren't real "Items" in Foundry, so animations don't trigger. This module fixes that by constructing a temporary item during the roll.
 
 ## What it does
-It bridges the gap by presenting a valid weapon during the roll, enabling hooks to fire. No configuration needed.
+It bridges the gap by presenting a valid weapon during the roll, enabling hooks to fire. No module settings to configure.
 
 ## Installation
 1.  Install **Automated Animations** and **Daggerheart**.
@@ -34,7 +34,7 @@ It bridges the gap by presenting a valid weapon during the roll, enabling hooks 
 3.  Add entries for your common attack names (e.g., "Claws", "Bite", "Slam").
     *   *Tip: Use the "Melee" category for generic swings.*
 4.  Roll an attack from a Daggerheart PC or NPC sheet.
-5.  Receive animations!
+5.  Animations play on the roll.
 
 ## License
 MIT
