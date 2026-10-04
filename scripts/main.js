@@ -12,7 +12,7 @@ Hooks.once('init', () => {
         type: class extends FormApplication {
             render() { window.open("https://discord.gg/vFGXf7Fncj", "_blank"); return this; }
         },
-        restricted: false
+        restricted: true
     });
 });
 
