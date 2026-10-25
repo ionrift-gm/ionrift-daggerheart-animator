@@ -3,6 +3,17 @@ import { AnimatorDiagnostics } from "./Diagnostics.js";
 
 // Register settings during init (before ready)
 Hooks.once('init', () => {
+    try {
+        game.settings.register("ionrift-daggerheart-animator", "retiredNoticeShown", {
+            scope: "world",
+            config: false,
+            type: Boolean,
+            default: false
+        });
+    } catch (err) {
+        console.error("Ionrift Animations | Could not register retired notice", err);
+    }
+
     // Support Link
     game.settings.registerMenu("ionrift-daggerheart-animator", "supportLink", {
         name: "Get Support",
@@ -26,6 +37,16 @@ Hooks.once('ready', async function () {
     } else {
         ui.notifications.error("Ionrift Animations requires 'Automated Animations' module!");
         console.error("Ionrift Animations | Readiness Check: Automated Animations MISSING or INACTIVE ❌");
+    }
+
+    try {
+        const shown = game.settings.get("ionrift-daggerheart-animator", "retiredNoticeShown");
+        if (game.user?.isGM && shown === false) {
+            ui.notifications.info("This module is no longer needed with recent system versions and is retired.");
+            await game.settings.set("ionrift-daggerheart-animator", "retiredNoticeShown", true);
+        }
+    } catch (err) {
+        console.error("Ionrift Animations | Retired notice failed", err);
     }
 });
 

@@ -1,5 +1,9 @@
 # Ionrift Daggerheart Animator
 
+This module is no longer needed with recent system versions and is retired.
+
+## Historical
+
 ![Downloads](https://img.shields.io/github/downloads/ionrift-gm/ionrift-daggerheart-animator/latest/total?color=violet&label=Downloads)
 ![Latest Release](https://img.shields.io/github/v/release/ionrift-gm/ionrift-daggerheart-animator?color=violet&label=Latest%20Version)
 ![Foundry v12](https://img.shields.io/badge/Foundry-v12-333333?style=flat&logo=foundryvirtualtabletop)
