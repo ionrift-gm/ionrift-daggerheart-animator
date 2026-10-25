@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.0.18] - 2026-10-25
+* Retired. Superseded by Automated Animations 7.1+ native Daggerheart support.
+
 ## [1.0.17] - 2026-07-14
 *   Package listing uses Foundry's default module icon.
 
